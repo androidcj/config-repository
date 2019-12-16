@@ -12,7 +12,7 @@ spring:
 
 eureka:
   instance:
-    hostname: 172.25.25.40
+    hostname: 172.25.25.39
   client:
     registerWithEureka: false
     fetchRegistry: false
@@ -30,11 +30,11 @@ spring:
 
 eureka:
   instance:
-    hostname: 172.25.25.40
+    hostname: 172.25.25.39
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://172.25.25.40:6001/eureka/,http://172.25.25.40:6002/eureka/
+      defaultZone: http://172.25.25.39:6001/eureka/,http://172.25.25.39:6002/eureka/
   server:
     enable-self-preservation: true # 开启自我保护机制*****************
