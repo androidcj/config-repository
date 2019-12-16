@@ -29,8 +29,8 @@ spring:
 
 eureka:
   client:
-    registerWithEureka: true # 服务注册开关
-    fetchRegistry: true # 服务发现开关
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
       defaultZone: http://172.25.25.39:6001/eureka
   instance:
