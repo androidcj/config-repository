@@ -12,8 +12,8 @@ mybatis:
   mapper-locations: classpath:mybatis/mapper/**/*.xml       # mapper映射文件
 
 spring:
+  profiles: dev # 开发环境
   application:
-    profiles: dev # 开发环境
     name: pateo-demo-product
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
