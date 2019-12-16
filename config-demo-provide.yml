@@ -14,7 +14,7 @@ mybatis:
 spring:
   profiles: dev # 开发环境
   application:
-    name: config-demo-provide1111
+    name: config-demo-provide
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver             # mysql驱动包
@@ -32,7 +32,7 @@ eureka:
     registerWithEureka: true # 服务注册开关
     fetchRegistry: true # 服务发现开关
     serviceUrl:
-      defaultZone: http://172.25.25.39:6001/eureka,http://172.25.25.39:6002/eureka
+      defaultZone: http://172.25.25.39:6001/eureka
   instance:
     instanceId: ${spring.application.name}:${server.port}
     prefer-ip-address: true
