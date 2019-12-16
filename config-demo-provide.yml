@@ -32,7 +32,7 @@ eureka:
     registerWithEureka: true # 服务注册开关
     fetchRegistry: true # 服务发现开关
     serviceUrl:
-      defaultZone: http://172.25.25.39:6001/eureka,http://172.25.25.39:6002/eureka
+      defaultZone: http://172.25.25.39:6001/,http://172.25.25.39:6002/
   instance:
     instanceId: ${spring.application.name}:${server.port}
     prefer-ip-address: true
