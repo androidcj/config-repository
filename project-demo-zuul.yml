@@ -23,6 +23,13 @@ eureka:
 zuul:
   routes:
     provider-consume:
+      sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods
       path: /consumer/product/**
+      serviceId: project-demo-consumer
+      stripPrefix: false
+
+    provider-user:
+      sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods
+      path: /consumer/redis/**
       serviceId: project-demo-consumer
       stripPrefix: false
