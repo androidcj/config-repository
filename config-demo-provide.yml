@@ -24,7 +24,7 @@ spring:
     database: 0
     host: 122.51.145.30
     port: 6379
-    password:
+    password: 123456789
     jedis:
       pool:
         max-active: 8
