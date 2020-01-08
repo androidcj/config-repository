@@ -49,5 +49,5 @@ management:
       exposure:
         include: "*"
 
-hy
+
 ---
