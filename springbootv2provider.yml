@@ -20,18 +20,18 @@ spring:
       initial-size: 5                            # 初始化连接数
       max-total: 5                               # 最大连接数
       max-wait-millis: 150                       # 等待连接获取的最大超时时间
-  redis:
-    database: 0
-    host: 122.51.145.30
-    port: 6379
-    password: 123456789
-    jedis:
-      pool:
-        max-active: 8
-        max-wait: -1
-        max-idle: 8
-        min-idle: 0
-      timeout: 10000
+#  redis:
+#    database: 0
+#    host: 122.51.145.30
+#    port: 6379
+#    password: 123456789
+#    jedis:
+#      pool:
+#        max-active: 8
+#        max-wait: -1
+#        max-idle: 8
+#        min-idle: 0
+#      timeout: 10000
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
