@@ -19,3 +19,12 @@ eureka:
   instance:
     instanceId: ${spring.application.name}:${server.port}
     prefer-ip-address: true
+
+#设置请求调用的超时时间
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+
+logging:
+  level:
+    com.cj.project.consumer.service.ProductConsumeService: debug
