@@ -22,9 +22,14 @@ eureka:
 
 #设置请求调用的超时时间
 ribbon:
-  ReadTimeout: 5000
-  ConnectTimeout: 5000
+  ReadTimeout: 5000  #获取连接的时间  5s
+  ConnectTimeout: 5000    #建立资源后从服务器读取可用资源的时间  5s
 
 logging:
   level:
     com.cj.project.consumer.service.ProductConsumeService: debug
+
+
+feign:
+  hystrix:
+    enabled: true
