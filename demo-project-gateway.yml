@@ -9,7 +9,13 @@ spring:
   profiles: dev
   application:
     name: demo-project-gateway
-
+  cloud:
+    gateway:
+      routes:
+        - id: costomer_getlist_route
+          uri: http://localhost:8082
+          predicates:
+            - Path=/consumer/product/list
 eureka:
   client:
     registerWithEureka: true
